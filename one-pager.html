@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shikuma — Overview</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0; }
+  :root { --ink:#0a0a0a; --body:#374151; --muted:#6b7280; --line:#e5e7eb;
+    --c1:#3D78EC; --c2:#4E8AD3; --c3:#59ABC3; --c4:#63BCB6; --c5:#75DA9E;
+    --serif:"Newsreader",Georgia,serif; --sans:"Inter",system-ui,sans-serif; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { width:8.5in; height:11in; }
+  body { font-family:var(--sans); color:var(--ink); background:#fff; -webkit-font-smoothing:antialiased; }
+  .page { width:8.5in; height:11in; padding:0.6in 0.7in 0.5in; display:flex; flex-direction:column; }
+  .spectrum { display:flex; height:4px; }
+  .spectrum span { flex:1; }
+  .top { position:absolute; top:0; left:0; right:0; }
+
+  header { display:flex; justify-content:space-between; align-items:flex-end; padding-bottom:14px; border-bottom:1px solid var(--ink); }
+  .mark { display:flex; align-items:center; gap:9px; font-family:var(--serif); font-size:26px; letter-spacing:-0.01em; }
+  .diamond { width:9px; height:9px; border-radius:2px; transform:rotate(45deg); background:linear-gradient(135deg,var(--c1),var(--c5)); }
+  .meta { text-align:right; font-size:8.5px; line-height:1.5; color:var(--muted); text-transform:uppercase; letter-spacing:0.14em; font-weight:700; }
+
+  .intro { padding:26px 0 20px; }
+  h1 { font-family:var(--serif); font-weight:400; font-size:30px; line-height:1.12; letter-spacing:-0.015em; max-width:30ch; margin-bottom:12px; }
+  .lede { font-size:11px; line-height:1.65; color:var(--body); max-width:62ch; }
+
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .stat { padding:16px 0; }
+  .stat + .stat { border-left:1px solid var(--line); padding-left:20px; }
+  .num { font-family:var(--serif); font-size:36px; line-height:1; letter-spacing:-0.02em; }
+  .num-l { margin-top:6px; font-size:9.5px; color:var(--muted); }
+
+  .row { display:grid; grid-template-columns:1.55in 1fr; gap:18px; padding:16px 0; border-bottom:1px solid var(--line); }
+  .label { display:flex; align-items:flex-start; gap:7px; font-size:8.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.14em; color:var(--muted); padding-top:2px; }
+  .label i { width:6px; height:6px; border-radius:1px; transform:rotate(45deg); flex:none; margin-top:2px; }
+  .row p, .row li { font-size:10.2px; line-height:1.6; color:var(--body); }
+  .row p + p { margin-top:6px; }
+  .row strong { color:var(--ink); font-weight:500; }
+  ul.tight { list-style:none; }
+  ul.tight li { padding-left:12px; position:relative; }
+  ul.tight li + li { margin-top:4px; }
+  ul.tight li::before { content:""; position:absolute; left:0; top:6px; width:4px; height:4px; background:var(--muted); border-radius:1px; transform:rotate(45deg); }
+  sup { font-size:7px; color:var(--muted); }
+
+  .contact { display:grid; grid-template-columns:1.55in 1fr; gap:18px; padding:16px 0; }
+  .who { font-family:var(--serif); font-size:17px; }
+  .role { font-size:9.5px; color:var(--muted); margin-top:2px; }
+
+  footer { margin-top:auto; padding-top:10px; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:24px; font-size:7.5px; line-height:1.5; color:var(--muted); }
+  footer ol { list-style:none; }
+</style>
+</head>
+<body>
+<div class="spectrum top" aria-hidden="true"><span style="background:var(--c1)"></span><span style="background:var(--c2)"></span><span style="background:var(--c3)"></span><span style="background:var(--c4)"></span><span style="background:var(--c5)"></span></div>
+<div class="page">
+  <header>
+    <div class="mark"><span class="diamond" aria-hidden="true"></span>Shikuma</div>
+    <div class="meta">Family Office Overview<br>November 2026</div>
+  </header>
+
+  <div class="intro">
+    <h1>A family office backing the science and technology that push humanity forward.</h1>
+    <p class="lede">Shikuma is the family office of Juan Benet and Molly Mackinlay. It deploys philanthropic capital into open science and fast, high-leverage research funding, and invests early in frontier technology companies, supporting ideas from first research through to products, companies, and new industries.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">$10M+</div><div class="num-l">philanthropic donations</div></div>
+    <div class="stat"><div class="num">75+</div><div class="num-l">investments in frontier tech companies</div></div>
+    <div class="stat"><div class="num">2</div><div class="num-l">mandates: philanthropy &amp; venture</div></div>
+  </div>
+
+  <div class="row">
+    <div class="label"><i style="background:var(--c1)"></i>Principals</div>
+    <div>
+      <p><strong>Juan Benet</strong> is a frontier technology founder and investor. He founded Protocol Labs in 2014 (Y Combinator, Summer 2014)<sup>1</sup>, an R&amp;D lab for computer networks, and created IPFS, the peer-to-peer content-addressed protocol, and Filecoin, a decentralized storage network. He was named to Fortune’s 40 Under 40 in 2018<sup>2</sup> and is an active angel investor in frontier technology.</p>
+      <p><strong>Molly Mackinlay</strong> is Head of R&amp;D at Protocol Labs and CEO of FilOz, where she leads development of Filecoin Onchain Cloud.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="label"><i style="background:var(--c2)"></i>Philanthropy</div>
+    <div>
+      <p>Shikuma’s giving focuses on accelerating scientific progress: fast, flexible funding for researchers, open infrastructure for science, and the institutions that make new fields possible.</p>
+      <ul class="tight" style="margin-top:8px">
+        <li><strong>Impetus Grants</strong> — Juan Benet and Molly Mackinlay are both publicly listed patrons<sup>3</sup> of Impetus Grants, which gives scientists fast grants for longevity research that would otherwise go unfunded. The program reports $34M deployed across 146 projects, decisions within three weeks, and 250+ resulting papers and preprints.<sup>3</sup></li>
+        <li><strong>Open science</strong> — support for open, verifiable research infrastructure and the public goods that new scientific fields depend on.</li>
+        <li><strong>Additional causes</strong> across science and technology for the public good.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="label"><i style="background:var(--c4)"></i>Investments</div>
+    <div>
+      <p>Shikuma has made 75+ investments in frontier technology companies. It invests early, alongside founders working on hard technical problems, and acts as a long-term partner as research becomes product and companies scale.</p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="label"><i style="background:var(--c5)"></i>Contact</div>
+    <div>
+      <div class="who">James Tunningley</div>
+      <div class="role">Philanthropic Capital Advisor, Shikuma</div>
+    </div>
+  </div>
+
+  <footer>
+    <ol>
+      <li>1. Y Combinator company directory, Protocol Labs — ycombinator.com/companies/681</li>
+      <li>2. Fortune, The Ledger 40 Under 40 (2018) — fortune.com/the-ledger-40-under-40/2018/juan-benet</li>
+      <li>3. Impetus Grants, “Made possible by our patrons” — impetusgrants.org</li>
+    </ol>
+    <div style="text-align:right; white-space:nowrap">Shikuma · Confidential overview<br>For informational purposes only</div>
+  </footer>
+</div>
+</body>
+</html>
